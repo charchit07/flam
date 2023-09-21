@@ -1,0 +1,59 @@
+.bottom-sheet {
+    height: 100%;
+  }
+
+  .handle {
+   display: flex;
+   justify-content: center;
+   padding: 2rem;
+  }
+  
+  .btn {
+    background-color: #EB6C5C;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    transition: height 2s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+    background-color: #FE8475;
+    color: #FFF;
+  }
+
+  .para{
+    margin: 10px auto;
+    width: 60%;
+  }
+  
+  /* Snap point styles */
+  .closed {
+    height: 0;
+  }
+  
+  .half-open {  
+    height: calc(50vh - 90px); /* Adjust the height as needed for your half-open state */
+   
+  }
+  
+  .fully-open {
+    height: calc(100vh - 90px); /* Adjust the height as needed for your fully open state */
+  
+  }
+  
+  /* Additional styles as needed for your content */
+  .content {
+    
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
